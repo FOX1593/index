@@ -1,0 +1,145 @@
+@charset "UTF-8";
+body {
+  font: 12px Arial, Helvetica, sans-serif, 宋体;
+  width: 100%;
+  color: #333; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  /*清除外边距*/
+  padding: 0;
+  /*清除内边距*/ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+  /*清除文字加粗*/
+  font-size: 100%;
+  /*设置字母与父元素相同*/ }
+
+i,
+em {
+  font-style: normal;
+  /*清除文字倾斜*/ }
+
+li {
+  list-style: none;
+  /*清除列表项目符号*/ }
+
+a {
+  text-decoration: none;
+  /*清除下划线*/
+  color: #888; }
+
+#container {
+  width: 100%;
+  height: auto; }
+
+/* 头部 */
+#head {
+  border-bottom: 1px solid #7A7F89;
+  padding-top: 15px;
+  width: 1200px;
+  margin: 0 0 0 159px;
+  height: 55px; }
+  #head a.logo {
+    float: left;
+    display: block;
+    height: 39px;
+    width: 311px; }
+  #head .help-center {
+    float: right;
+    line-height: 39px; }
+  #head .account {
+    margin-right: 40px;
+    color: #666;
+    float: right;
+    line-height: 39px; }
+
+#location {
+  background: url(//ssl.vanclimg.com/shopping/newpromotions/newProm.gif);
+  background-position: 0 0;
+  height: 28px;
+  width: 540px;
+  margin: 10px 0 0 159px; }
+  #location em {
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    width: 170px; }
+  #location span {
+    color: #666;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    width: 170px; }
+
+table {
+  width: 1000px;
+  margin: 10px 0 0 159px; }
+  table thead:nth-of-type(1) {
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0; }
+    table thead:nth-of-type(1) tr > th:nth-of-type(1) {
+      position: relative;
+      top: 0;
+      left: 0; }
+    table thead:nth-of-type(1) tr > th:nth-of-type(2) {
+      position: relative;
+      top: 0;
+      left: 370px; }
+    table thead:nth-of-type(1) tr > th:nth-of-type(3) {
+      position: relative;
+      top: 0;
+      left: 420px; }
+    table thead:nth-of-type(1) tr > th:nth-of-type(4) {
+      position: relative;
+      top: 0;
+      left: 690px; }
+    table thead:nth-of-type(1) tr > th:nth-of-type(5) {
+      position: relative;
+      top: 0;
+      left: 750px; }
+  table tbody {
+    width: 20px; }
+    table tbody tr > td {
+      padding: 0;
+      width: 30px; }
+  table img {
+    display: block;
+    height: 100px; }

@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=stylesheet type=text/css href=./css/DL.css><script type=text/javascript src=../lib/jquery1.12.4.js></script><title>登录界面</title></head><body><div id=top><div id=head><a class=logo href="http://www.vancl.com/"></a><p><a href="http://help.vancl.com/">帮助</a></p></div><div class=wrapper><div class=box1><h3>凡客 Vancl 登录 <span>免费注册</span></h3></div><div class=login><div class=tag><ul class=tags><li class=on>普通登录</li><li class=to>快速登录</li></ul></div><div class=show><form><input type=text class=zh value=请输入账号> <input type=password class=ma value=请输入密码><div class=dl><a class=.dl_a><p>登录</p></a></div></form></div><div class=logo><div><img src=./img/logo.jpg></div></div></div></div></div><script type=text/javascript src=./js/base.js></script><script>
+      var unameInp =document.querySelector('.zh')
+      var pwInp = document.querySelector('.ma')
+      var loginBtn = document.querySelector('.dl')
+      var showBox = document.querySelector('.show')
+      console.log(loginBtn)
+      loginBtn.onclick=()=>{
+         console.log(11)
+         //用户名
+         var uname = unameInp.value
+
+         //密码
+         var pw = pwInp.value
+         //请求后台接口,让后台页面帮我链接数据库M,看看有没有这个用户,然后把查询结果返回给我：1表示成功,0表示失败
+         //发ajax请求
+         //初始化xhr对象
+         var xhr = new XMLHttpRequest
+         //请求
+         xhr.open('post', './server.php');
+         xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded')
+         xhr.send(`username=${uname}&password=${pw}`);
+         //响应
+         xhr.onreadystatechange = function () {
+            if (xhr.status == 200 && xhr.readyState == 4) {
+               if (xhr.responseText == 1) {
+                  //登陆成功
+                  showBox.innerHTML = `欢迎${uname}回来!`;
+                  loginBtn.parentNode.parentNode.style.display = "none";
+               } else {
+                  showBox.innerHTML = "用户名或者密码错误,请重新登陆";
+                  loginBtn.parentNode.parentNode.style.display = "block";
+               }
+            }
+         }
+      }
+
+
+   </script></body></html>

@@ -1,0 +1,179 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: "Microsoft Yahei";
+   color: #000;
+   font-size: 12px;
+   display: block;
+}
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+   margin:0;			/*清除外边距*/
+   padding:0;		/*清除内边距*/
+   }
+
+h1,h2,h3,h4,h5,h6,b,strong{
+   font-weight:normal;		/*清除文字加粗*/
+   font-size:100%;		/*设置字母与父元素相同*/
+   }
+i,em{
+   font-style:normal;		/*清除文字倾斜*/
+   }
+li{
+   list-style:none;		/*清除列表项目符号*/
+   }
+a{
+   text-decoration:none;	/*清除下划线*/
+   color:#888;
+   }
+input{
+   outline:none;		/*清除input选中后的蓝框*/
+   }
+
+#head{
+   margin: 0 0 0 159px ;
+   border-bottom: 1px solid #7a7f89;
+   height: 40px!important;
+   height: 39px;
+   width: 1200px;
+   font-size: 12px;
+   color: #333333;
+   margin-top: 15px;
+   padding: 0 0 15px 0;
+   .logo{
+      background: url(http://i1.vanclimg.com/cms/20160119/logo_new.jpg) no-repeat left top;
+      display: inline-block;
+      height: 50px;
+      width: 187px;
+   }
+   p{
+      a{
+         position: absolute;
+         top: 40px;
+         left: 1320px;
+         float: right;
+      }
+      float: right;
+      margin: 0 5px;
+   }
+}
+.wrapper{
+   margin: 0 0 0 159px ; 
+   width: 1200px;
+   margin: 50px auto 10px;
+
+}
+.box1{
+   width: 100%;
+   height: 25px;
+   position: relative;
+   h3{
+      font-size: 22px;
+      color: #979797;
+      font-weight: bolder;
+      text-align: left;
+      height: 25px;
+      line-height: 25px;
+      float: right;
+      margin: 0 100px 0 0;
+      width: 400px;
+      position: relative;
+      span{
+         font-size: 14px;
+         font-weight: normal;
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+      }
+   }
+}
+.login{
+      width: 400px;
+      border: 1px solid #D1D1D1;
+      background-color: #fff;
+      float: right;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-right: 100px;
+   .tag{
+      width: 400px;
+      height: 35px;
+      line-height: 35px;
+      border-bottom: 1px solid #cbcbcb;
+      ul{
+         li:nth-of-type(1){
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            text-align: center;
+            background: #b42025;
+            color: #fff;
+            font-weight: bolder;
+         }
+         li:nth-of-type(2){
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            text-align: center;
+            background: #f5f5f5;
+            color: #656565;
+            cursor: pointer;
+            font-size: 14px;
+         }
+      }
+   }
+}
+.show{
+   width: 415px;
+   height: 261px;
+   .zh{
+      float: left;
+      top: 30px;
+      left: 20px;
+      height: 45px;
+      width: 360px;
+      border: solid 1px #cbcbcb;
+      position: relative;
+      overflow: hidden;
+   }
+   .ma{
+      float: left;
+      top: 80px;
+      left: 20px;
+      height: 45px;
+      width: 360px;
+      border: solid 1px #cbcbcb;
+      position: relative;
+      overflow: hidden;
+   }
+   .dl{
+         width: 300px;
+         display: block;
+         height: 45px;
+         line-height: 45px;
+         background: #b42025;
+         text-align: center;
+         font-size: 20px;
+         position: relative;
+         top: 200px;
+         left: 55px;
+         P{
+            float: left;
+            position: absolute;
+            top: 0px;
+            left: 130px;
+            color: #fff;
+         }
+      }
+   }
+
+.logo{
+   position: absolute;
+   top: 170px;
+   left: 135px;
+}
+

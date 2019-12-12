@@ -1,0 +1,672 @@
+body{
+   font-size: 12px;
+   font-family: "宋体";
+   color: #333;
+   display: block;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+   font-weight:normal;		/*清除文字加粗*/
+   font-size:100%;		/*设置字母与父元素相同*/
+   }
+i,em{
+   font-style:normal;		/*清除文字倾斜*/
+   }
+li{
+   list-style:none;		/*清除列表项目符号*/
+   }
+a{
+   text-decoration:none;	/*清除下划线*/
+   color:#888;
+   }
+input{
+   outline:none;		/*清除input选中后的蓝框*/
+   }
+// 版心
+#content{
+   width: 100%;
+   height: auto;
+}
+
+// 顶部登录栏
+#top {
+   width: 100%;
+   height: 32px;
+   background: #f7f7f7;
+   border-bottom: 1px solid #ccc;
+   color: #808080;
+}
+#top_inner{
+   width: 1200px;
+   display: block;
+   height: 31px;
+   line-height: 32px;
+   margin: 0 auto;
+   background: #f7f7f7;
+}
+#top_inner .top_right {
+   width: 126px;
+   float: right;
+   position: relative;
+   z-index: 9000;
+}
+#top_inner .top_left{
+   width: 126px;
+   float: right;
+   position: relative;
+   z-index: 9000;
+   top:0px;
+}
+.top_left {
+      span{
+      position: absolute;
+      top: 0;
+      left: -300px;
+   }
+   a:nth-of-type(1){
+      position: absolute;
+      top: 0;
+      left: -150px;
+   }
+   a:nth-of-type(2){
+      position: absolute;
+      top: 0;
+      left: -130px;
+   }
+}
+.top_right{
+   span{
+      position: absolute;
+      top: 0;
+      left: -60px;
+   }
+   img:nth-of-type(1){
+      position: absolute;
+      top: 7px;
+      left: -5px;
+   }
+   p{
+      position: absolute;
+      top: 0;
+      left: 20px;
+   }
+   img:nth-of-type(2){
+      position: absolute;
+      top: 7px;
+      left: 75px;
+   }
+   img:nth-of-type(3){
+      position: absolute;
+      top: 7px;
+      left: 100px;
+   }
+}
+
+
+
+
+
+// 搜索栏，购物车
+#search{
+   width: 100%;
+   margin: 0 auto;
+}
+#search_inner{
+   width: 1200px;
+   height: 62px;
+   margin: 20px auto 25px;
+}
+.search_from{
+   position: relative;
+   float: right;
+   top: 0;
+   left: 0;
+   .search_text input{
+      width: 261px;
+      height: 27px;
+      padding: 0px 5px;
+      line-height: 27px;
+      border: 1px solid #c9caca;
+      position: absolute;
+      top: 0;
+      right:170px;
+      float: right;
+      font-size: 12px;
+      font-family: "宋体";
+      color: #333;
+   }
+   .search_button input{
+      width: 49px;
+      height: 29px;
+      background: #b81c22;
+      position: absolute;
+      top: 0;
+      right: 120px;
+      margin: 0 auto;
+      line-height: 29px;
+      float: right;
+      color: #fff;
+      font-size: 18px;
+      outline:none;
+      font-family: inherit;
+      font-weight: inherit;
+   }
+}
+.shop{
+   img{
+      width: 30px;
+      height: 27px;
+   }
+   a{
+      position: absolute;
+      color: #fff;
+      top:8px;
+      left: 40px;
+   }
+   position: absolute;
+   font-size: 12px;
+   float: right;
+   top: 53px;
+   right:170px;
+   width: 105px;
+   height: 27px;
+   border: 1px solid #c1383e;
+   background: #b81c22;
+}
+.menu{
+   float:right;
+   width: 440px;
+   padding-top: 5px;
+   line-height: 18px;
+   color: #727171;
+   padding-left: 15px;
+   position: absolute;
+   height:18px;
+   top: 85px;
+   right: 140px;
+   P{
+      color: #727171;
+      margin: 0 7px 0 0;
+      height:18px ;
+      float:left;
+   }
+}
+
+
+// 导航列表栏
+#nav{
+   width: 1000px;
+   position: relative;
+   height: 22px;
+   margin: 0 auto;
+   padding-left: 200px;
+   .nav_logo{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0px;
+      background: none;
+   }
+   ul>li{
+      float: left;
+      width: 99px;
+      line-height: 22px;
+      padding: 0px 0px 10px;
+      text-align: center;
+      font-size: 16px;
+      font-family: "Microsoft YaHei";
+      position: relative;
+      span{
+         position: absolute;
+         top: 0;
+         left: 99px;
+      }
+   }
+}
+// 轮播图
+.swiper-container{
+   width: 1200px;
+   height: 535px;
+   overflow: hidden;
+   position: relative;
+}
+//时间列表
+#time{
+   margin: 0 auto;
+   width: 100%;
+   .time_logo{
+      width: 1200px;
+      height: 55px;
+      margin: 30px 0 0 159px;
+   }
+   .time_inner{
+      background:url(https://i2.vanclimg.com/cms/20191203/mm.jpg) no-repeat scroll 0px 0px;
+      width: 1200px;
+      height: 64px;
+      margin: 30px 0 0 159px;
+      span{
+         line-height: 64px;
+         text-align: center;
+         font-family: "Microsoft YaHei";
+         color: #fff;
+         font-size: 18px;
+         margin-left: 800px;
+      }
+      p:nth-of-type(1){
+         color: #000000;
+         position: relative;
+         float: right;
+         width:40px;
+         height:40px;
+         font-size: 20px;
+         font-family: "Microsoft YaHei";
+         top: 20px;
+         left: -138px;
+      }
+      p:nth-of-type(2){
+         color: #000000;
+         position: relative;
+         float: right;
+         font-family: "Microsoft YaHei";
+         width:40px;
+         height:40px;
+         font-size: 20px;
+         top: 20px;
+         left: -35px;
+      }
+      p:nth-of-type(3){
+         color: #000000;
+         float: right;
+         font-family: "Microsoft YaHei";
+         position: relative;
+         width:40px;
+         height:40px;
+         font-size: 20px;
+         top: 20px;
+         left: 68px;
+      }
+
+   }
+}
+
+
+// 主体内容
+#inner{
+   margin: 0 0 0 159px;
+   width: 1200px;
+   .show{
+      width: 1200px;
+      color: #474747;
+      font-weight: bold;
+      margin: 0 auto;
+      font-family: "Microsoft YaHei";
+      ul{
+         overflow: hidden;
+         margin: 10px 0 0 0;
+         padding: 0;
+         width: 1210px;
+         li{
+            float: left;
+            width: 232px;
+            margin-right: 10px;
+            list-style: none;
+            div:nth-of-type(1){
+               font-size: 16px;
+               margin-top: 10px;
+               height: 45px;
+               font-weight: normal;
+            }
+            div:nth-of-type(2){
+               position: relative;
+               top: 0;
+               left: 0;
+            }
+            div span:nth-of-type(1){
+               display: block;
+               color: #d3d3d3;
+               font-size: 14px;
+               text-decoration: line-through;
+               font-weight: normal;
+            }
+            div span:nth-of-type(2){
+               display: block;
+               color: #bb2b34;
+               font-size: 16px;
+            }
+            div span:nth-of-type(3){
+               position: absolute;
+               right: 10px;
+               bottom: 0;
+               font-size: 16px;
+               font-weight: normal;
+               em{
+                  font-size: 24px;
+                  font-style: normal;
+                  color: #bb2b34;
+                  font-weight: bolder;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+// 优惠券
+.inner_table{
+   margin:40px auto;
+}
+.inner_box{
+   margin-bottom:40px ;
+}
+.inner_box1{
+   margin:30px 0;
+}
+
+//底部
+#pic_tuijian{
+   margin: 0 0 0 159px;
+   width: 1200px;
+   h2{
+      text-align: center;
+      line-height: 50px;
+      margin: 30px 0px;
+      font-family: "Microsoft YaHei";
+      color: #9a9a9a;
+      font-size: 18px;
+   }
+   ul>li>h3{
+      height: 28px;
+      padding: 20px 12px;
+      line-height: 28px;
+      border: 1px solid #e8e7ec;
+      border-top: 0px;
+      font-family: "Microsoft YaHei";
+      font-size: 14px;
+      span{
+         float: right;
+         color: #a10000;
+         font-family: Arial;
+         line-height: 24px;
+         font-size: 14px;
+      }
+   }
+   .pic_one{
+      width: 590px;
+      float: left;
+      margin-right: 17px;
+   // display: inline;
+   }
+   .pic_two{
+      width: 290px;
+      float: left;
+      margin-right: 17px;
+   //  display: inline;
+      div{
+         margin-bottom: 16px;
+         h3{
+            height: 28px;
+            padding: 20px 12px;
+            line-height: 28px;
+            // border: 1px solid #e8e7ec;
+            border-top: 0px;
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            span{
+               float: right;
+               color: #a10000;
+               font-family: Arial;
+               line-height: 24px;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
+
+#pic_kuzi{
+   margin: 0 0 0 159px;
+   width: 1200px;
+   height: 637px;
+   h2{
+      text-align: center;
+      line-height: 50px;
+      margin: 30px 0px;
+      font-family: "Microsoft YaHei";
+      color: #9a9a9a;
+      font-size: 18px;
+   }
+   img{
+      width: 285px;
+      height: 438px;
+   }
+   li:nth-of-type(4){
+      margin-right: 0px;
+   }   
+   ul>li{
+      width: 285px;
+      height: 508px;
+      float: left;
+      // display: inline;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      
+      h3{
+         height: 28px;
+         padding: 20px 12px;
+         line-height: 28px;
+         border: 1px solid #e8e7ec;
+         border-top: 0px;
+         font-family: "Microsoft YaHei";
+         font-size: 14px;
+         color: #333333;   
+         span{
+            float: right;
+            color: #a10000;
+            font-family: Arial;
+            line-height: 24px;
+            font-size: 14px;
+         }     
+      }
+   }
+}
+
+//服务区
+#serve{
+   overflow: hidden;
+   width: 1118px;
+   height: 282px;
+   margin: 0px auto;
+   padding: 0px 40px 0px;
+   border: 1px solid #e0e0e1;
+   font-family: "Microsoft YaHei";
+   margin-bottom: 25px;
+   .server_one{
+      margin: 33px 0px 23px;
+      overflow: hidden;
+      .onecode{
+         border-right: none;
+      }
+      ul>li{
+         width: 370px;
+         height: 138px;
+         border-right: 1px solid #e0e0e1;
+         margin-right: 0px;
+         float: left;
+         p{
+            text-align: center;
+            font-size: 14px;
+            color: #727171;
+            line-height: 26px;
+         }
+         .one1{
+            margin: 15px auto 30px;
+            img{
+               display: block;
+               margin: 0px auto;
+            }
+         }
+         .one2{
+            margin: 0px auto;
+            width: 156px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            font-size: 14px;
+            background: #b81c22;
+            color: #ffffff;
+         }
+         .one3{
+            margin: 20px 0px;
+         }
+      }
+   }
+}
+.img{
+   width: 104px;
+   height: 104px;
+   margin-bottom: 10px;
+   display: block;
+   margin: 0px auto;
+}
+
+.serve_two{
+   height: 26px;
+   padding: 17px 0px 14px;
+   background: #f8f8f8;
+   width: 100%;
+   margin: 0;
+   .none{
+      border-right: none;
+   }
+   ul>li{
+      padding: 0px 65px;
+      line-height: 26px;
+      border-right: 1px solid #dadadb;
+      width: auto;
+      text-align: center;
+      margin-right: 0px;
+      float: left;
+   }
+}
+
+// 底部区域
+#footerArea{
+   .footBottom{
+      width: 100%;
+      height: auto;
+      margin: 0px auto;
+      margin-bottom:20px;
+      border-top: 1px solid #3e3a39;
+      .footBottomTab{
+         width: 1200px;
+         height: auto;
+         margin: 10px auto;
+         p{
+            text-align: center;
+            line-height: 25px;
+            color: #3e3a39;
+            font-family: "Microsoft YaHei";
+         }
+      }
+   }
+}
+.subFooter{
+   width: 980px;
+   margin: 0px auto 25px;
+   text-align: center;
+   a{
+      margin: 0 10px;
+   }
+   a:nth-of-type(1){
+      background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -581px transparent;
+      display: inline-block;
+      height: 42px;
+      width: 113px;
+   }
+   a:nth-of-type(2){
+      background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -629px transparent;
+      display: inline-block;
+      height: 45px;
+      width: 156px;
+   }
+   a:nth-of-type(3){
+      background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -675px transparent;
+      display: inline-block;
+      height: 42px;
+      width: 96px;
+   }
+   a:nth-of-type(4){
+      background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll -97px -675px transparent;
+      display: inline-block;
+      height: 42px;
+      width: 101px;
+   }
+   a:nth-of-type(5){
+      background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll -202px -675px transparent;
+      display: inline-block;
+      height: 42px;
+      width: 42px;
+   }
+   a:nth-of-type(6){
+      background: url(http://i.vanclimg.com/other/kexin_brand_for_others.png) no-repeat ;
+      background-size:100% 100% ;
+      display: inline-block;
+      width: 120px;
+      height: 39px;
+   }
+}
+
+
+// 浮动小球
+.BayWindow{
+   position: fixed;
+   right: 10px;
+   bottom: 20px;
+   z-index: 10;
+   width: 73px;
+   height: 281px;
+   border: 1px solid #b81b22;
+   border-bottom: none;
+   margin-bottom: 30px;
+   ul>li{
+      width: 73px;
+      border-bottom: 1px solid #b81b22;
+      a{
+         display: block;
+         width: 73px;
+      }
+   }
+}
+.newPeople a{
+   height: 76px;
+   background: url(https://i2.vanclimg.com/cms/20190716/baywindow0716.png) no-repeat -1px -1px;
+}
+.downApp a{
+   height: 76px;
+   background: url(http://i2.vanclimg.com/cms/20160802/baywindow.png) no-repeat -1px -1px;
+}
+.online a{
+   height: 71px;
+   background: url(http://i2.vanclimg.com/cms/20160802/baywindow.png) no-repeat -1px -78px;
+}
+.BlackTop a{
+   height: 55px;
+   background: url(http://i2.vanclimg.com/cms/20160802/baywindow.png) no-repeat 1px -149px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
